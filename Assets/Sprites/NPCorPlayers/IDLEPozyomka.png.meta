@@ -134,6 +134,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: SDW_Pozyomka
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 43
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf042ff0a35ad34db24776693472af7
+      internalID: -1144350027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -149,6 +171,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       IDLEPozyomka_0: 7102963541827801218
+      SDW_Pozyomka: -1144350027
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
