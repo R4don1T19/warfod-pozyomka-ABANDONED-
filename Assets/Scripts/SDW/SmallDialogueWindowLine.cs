@@ -3,6 +3,5 @@ using UnityEngine;
 public class SmallDialogueWindowLine
 {
     public string line;
-    public string name;
     public Sprite icon;
 }

@@ -7,25 +7,21 @@ public class SmallDialogueWindowManager : MonoBehaviour
 {
     [SerializeField] private DialogueUI dUI;
     [SerializeField] private SmallDialogueWindowPlayerTriggerZone pTZ;
-    [SerializeField] private PlayerMovement PM;
     [SerializeField] private GameObject DIalogueBox;
     [SerializeField] private GameObject QuestUI;
     [SerializeField] private GameObject InventoryUI;
     [SerializeField] private TMP_Text TextLine;
-    [SerializeField] private TMP_Text SpeakerName;
     [SerializeField] private Image SpeakerSprite;
     private SmallDialogueWindowLine currentLine;
     private bool DialogueIsActive = false;
     private bool ReadyToEnd = false;
     private int LineCount = 0;
     private int CurrentNode = 0;
-    private string previousSpeakerName;
+    private string previousSpeakerIcon;
     private Coroutine CurrentCoroutine; // определять переменную-корутину необязательно, но для её контроля лучше это делать. 
-    private void Awake()
+    private void Start()
     {
-        PM = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
-        pTZ = GameObject.FindWithTag("SDWTrigger").GetComponent<SmallDialogueWindowPlayerTriggerZone>();
-
+        pTZ = PlayerMovement.Instance.gameObject.GetComponentInChildren<SmallDialogueWindowPlayerTriggerZone>();
     }
     private void Update()
     {
@@ -39,11 +35,12 @@ public class SmallDialogueWindowManager : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.E) && !DialogueIsActive)
                 StartSmallTalk(pTZ.Graph);
         }
+        else
+            SmallTalkEnd();
     }
 
     private void StartSmallTalk(SmallDialogueWindowGraph graph)
     { 
-        PM.enabled = false;
         InventoryUI.SetActive(false);
         QuestUI.SetActive(false);
 
@@ -51,7 +48,6 @@ public class SmallDialogueWindowManager : MonoBehaviour
         currentLine = graph.NodesList[CurrentNode].lines[LineCount];
 
         DIalogueBox.SetActive(true);
-        SpeakerName.text = currentLine.name;
         SpeakerSprite.sprite = currentLine.icon;
         
         // Корутина печатает текст
@@ -60,7 +56,7 @@ public class SmallDialogueWindowManager : MonoBehaviour
         CurrentCoroutine = StartCoroutine(Typetext(currentLine.line));
         
         LineCount++;
-        previousSpeakerName = SpeakerName.text; // нужно для корутины
+        previousSpeakerIcon = SpeakerSprite.name; // нужно для корутины
         // если локальное количество реплик превысило допустимое
         if (LineCount >= graph.NodesList[CurrentNode].lines.Count)
         {
@@ -82,7 +78,7 @@ public class SmallDialogueWindowManager : MonoBehaviour
     {
         int count = line.Length;
         // Условие для продолжения текста или его сброса(если продолжает реплику один герой)
-        if (previousSpeakerName != SpeakerName.text)
+        if (previousSpeakerIcon != SpeakerSprite.name)
             TextLine.text = "";
         else
             TextLine.text += " ";
@@ -100,14 +96,17 @@ public class SmallDialogueWindowManager : MonoBehaviour
     }
     private void SmallTalkEnd()
     {
-        SpeakerName.text = null;
+        // Удаление информации, если внезапно закончился смол-ток
+        LineCount = 0;
+        CurrentNode = 0;
+
+        // Все остальное
         SpeakerSprite.sprite = null;
         TextLine.text = null;
         DIalogueBox.SetActive(false);
 
         ReadyToEnd = false;
-        
-        PM.enabled = true;
+
         QuestUI.SetActive(true);
         InventoryUI.SetActive(true);
     }
