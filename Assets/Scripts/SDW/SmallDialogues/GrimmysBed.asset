@@ -16,17 +16,14 @@ MonoBehaviour:
   - lines:
     - line: "\u0413\u0440\u044D\u043C\u043C\u0438 \u043D\u0430\u0432\u0435\u0440\u043D\u044F\u043A\u0430
         \u0441\u043F\u0438\u0442,"
-      name: "\u041F\u043E\u0437\u0451\u043C\u043A\u0430"
-      icon: {fileID: 8447388685732608060, guid: aa6005f3f9d2359499381991c87e4a94, type: 3}
+      icon: {fileID: -1144350027, guid: 87bf722692ee0f1449ed7b1aba7a61be, type: 3}
     - line: "\u043D\u0435 \u0431\u0443\u0434\u0443 \u0435\u0433\u043E \u0431\u0443\u0434\u0438\u0442\u044C
         \u0440\u0430\u043D\u044C\u0448\u0435 \u0432\u0440\u0435\u043C\u0435\u043D\u0438."
-      name: "\u041F\u043E\u0437\u0451\u043C\u043A\u0430"
-      icon: {fileID: 8447388685732608060, guid: aa6005f3f9d2359499381991c87e4a94, type: 3}
+      icon: {fileID: -1144350027, guid: 87bf722692ee0f1449ed7b1aba7a61be, type: 3}
     nodeID: 0
   - lines:
     - line: "\u041D\u0430\u0434\u0435\u044E\u0441\u044C \u0440\u0430\u0441\u0442\u0432\u043E\u0440
         \u043F\u043E\u043C\u043E\u0433 \u0435\u043C\u0443 \u0443\u043D\u044F\u0442\u044C
         \u0435\u0433\u043E \u0433\u0440\u043E\u043C\u043A\u0438\u0439 \u043A\u0430\u0448\u0435\u043B\u044C\u2026"
-      name: "\u041F\u043E\u0437\u0451\u043C\u043A\u0430"
-      icon: {fileID: 8447388685732608060, guid: aa6005f3f9d2359499381991c87e4a94, type: 3}
+      icon: {fileID: -1144350027, guid: 87bf722692ee0f1449ed7b1aba7a61be, type: 3}
     nodeID: 0
