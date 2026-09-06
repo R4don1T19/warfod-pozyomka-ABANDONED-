@@ -5023,20 +5023,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8667996560162165133, guid: a2b15e67b17e4904595675ce87998173, type: 3}
-      propertyPath: PM
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8667996560162165133, guid: a2b15e67b17e4904595675ce87998173, type: 3}
-      propertyPath: pTZ
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 9016851867792567921, guid: a2b15e67b17e4904595675ce87998173, type: 3}
       propertyPath: m_Name
-      value: Singleton
-      objectReference: {fileID: 0}
-    - target: {fileID: 9016851867792567921, guid: a2b15e67b17e4904595675ce87998173, type: 3}
-      propertyPath: m_TagString
       value: Singleton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5897,10 +5885,6 @@ PrefabInstance:
     - target: {fileID: 1038314198773427810, guid: 51eb0c2a8f7a2854e8823514066eabcb, type: 3}
       propertyPath: m_Name
       value: MainPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 3427691079725954613, guid: 51eb0c2a8f7a2854e8823514066eabcb, type: 3}
-      propertyPath: Parallax
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7254279922456149496, guid: 51eb0c2a8f7a2854e8823514066eabcb, type: 3}
       propertyPath: enemy
