@@ -7,9 +7,8 @@
 Игра на данный момент заброшена в разработке, мало-мальское, что я сделал:
 Система диалогов(Ноды в инспекторе)(ScriptableObjects)
 
-<img width="439" height="719" alt="image" src="https://github.com/user-attachments/assets/2eae902e-ed9e-44f8-a36e-150ff2005c69" />
-
 <img width="426" height="240" alt="0907" src="https://github.com/user-attachments/assets/e19e676f-19d5-4129-bb65-f8cb4f5449d3" />
+<img width="439" height="719" alt="image" src="https://github.com/user-attachments/assets/2eae902e-ed9e-44f8-a36e-150ff2005c69" />
 
 Смена локаций(через спавнера и подписки на смену локации)
 
