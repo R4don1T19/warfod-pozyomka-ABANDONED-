@@ -6,14 +6,17 @@
 
 Игра на данный момент заброшена в разработке, мало-мальское, что я сделал:
 Система диалогов(Ноды в инспекторе)(ScriptableObjects)
+
 <img width="439" height="719" alt="image" src="https://github.com/user-attachments/assets/2eae902e-ed9e-44f8-a36e-150ff2005c69" />
 
 <img width="426" height="240" alt="0907" src="https://github.com/user-attachments/assets/e19e676f-19d5-4129-bb65-f8cb4f5449d3" />
 
 Смена локаций(через спавнера и подписки на смену локации)
+
 <img width="426" height="240" alt="0907(1)" src="https://github.com/user-attachments/assets/5cf73000-8933-4be5-bf1e-cc920bc062cd" />
 
 Разговоры-интеракты(Small-talk), почти все то же самое, что и диалоги, но уменьшено.(ScriptableObjects)
+
 <img width="426" height="240" alt="0907(2)" src="https://github.com/user-attachments/assets/090d4d7c-711a-4212-aa0f-67be87e036b9" />
 
 Квесты(gif-файл не уместился). Работают через флаги и вышеупоямутый ScriptableObjects.
